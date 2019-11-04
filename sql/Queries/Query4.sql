@@ -1,3 +1,5 @@
+-- Find the top dealer(s) by dollar-amount sold in the past year.
+
 SELECT t.dealername, t.sales
 FROM ( SELECT dealername, SUM(SalePrice) AS sales
 FROM (sale S 

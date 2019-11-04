@@ -1,3 +1,5 @@
+-- In what month(s) do convertibles sell best?
+
 SELECT t.Month, t.sales
 FROM
 (SELECT EXTRACT(MONTH FROM s.saledate) AS Month, COUNT(SaleId) sales

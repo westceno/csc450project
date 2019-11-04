@@ -1,3 +1,5 @@
+-- Find the top brand(s) by dollar-amount sold in the past year.
+
 SELECT t.brandName, sales
 FROM ( SELECT brandNAME, SUM(SalePrice) AS sales
 FROM (sale S 

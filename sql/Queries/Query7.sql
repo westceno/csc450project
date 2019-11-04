@@ -1,3 +1,5 @@
+-- Find the dealer(s) who keeps a vehicle in inventory for the longest average time.
+
 SELECT t.dealername, averagetime
 FROM
 (SELECT dealername, AVG(SaleDate  - ProductionDate) AS averagetime

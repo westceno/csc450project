@@ -1,3 +1,5 @@
+-- Show sales trends for various brands over the past 3 years, by year, buyer gender, and buyer income range. 
+
 SELECT brandname, EXTRACT(year FROM SaleDate) AS sales, COUNT(SaleId) AS SalesByYear
 FROM Sale S 
 LEFT JOIN vehicle  V ON S.vin = V.vin
